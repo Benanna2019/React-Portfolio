@@ -1,0 +1,75 @@
+.Navbar-Container {
+  display: flex;
+  align-items: center;
+  height: 3.5rem;
+  text-align: center;
+  background-color: black;
+  border-bottom: 2px solid #04e99d;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.Btn-Container {
+  display: flex;
+  height: 3rem;
+  font-size: 2rem;
+}
+
+.btn {
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  margin-right: 1rem;
+  color: white;
+  background: none;
+  outline: none;
+  border: none;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(255, 255, 255, 0);
+  position: relative;
+  overflow: hidden;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.btn:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #f3861f;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+  box-shadow: 0 10px 10px -10px rgba(253, 252, 252, 0.5);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  color: #f3861f;
+}
+/* .btn:hover:before,
+.btn:focus:before,
+.btn:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+} */

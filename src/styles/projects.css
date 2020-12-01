@@ -1,0 +1,17 @@
+.projects-container {
+  height: 45rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #202020;
+}
+
+.card {
+  width: 28rem;
+  height: 32rem;
+}
+
+.img {
+  width: 30px;
+  height: 30px;
+}
