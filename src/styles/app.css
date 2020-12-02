@@ -1,10 +1,10 @@
-@import "normalize";
+/* @import "normalize"; */
 /* @import "font.css"; */
 
-*,
+/* *,
 *::before,
 *::after {
-  /* font-family: Gotham Rounded, sans-serif; */
+  font-family: Gotham Rounded, sans-serif;
   box-sizing: border-box;
 }
 
@@ -15,4 +15,4 @@ html {
 body {
   padding: 0;
   margin: 0;
-}
+} */

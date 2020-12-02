@@ -21,7 +21,8 @@ export default function Navbar() {
     gsap.from(elem, {
       scrollTrigger: {
         trigger: elem,
-        toggleActions: "restart pause resume none",
+        start: "top center",
+        toggleActions: "play none none none",
       },
       duration: 2.5,
       ease: "bounce",
@@ -47,15 +48,13 @@ export default function Navbar() {
         <button className="btn about-me">About Me</button>
         <button className="btn coding-challenges">Coding Challenges</button>
         <button className="btn projects">Projects</button>
-        <button className="btn blog">
-          <a
-            className="btn href"
-            href="https://next-js-blog-xi.vercel.app/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            My Blog
-          </a>
+        <button
+          className="btn blog"
+          onClick={() =>
+            window.open("https://next-js-blog-xi.vercel.app/", "_blank")
+          }
+        >
+          My Blog
         </button>
         <button className="btn contact">Contact</button>
       </div>

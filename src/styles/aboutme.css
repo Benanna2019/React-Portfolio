@@ -1,5 +1,5 @@
 .Aboutme-Container {
-  height: 45rem;
+  height: inherit;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -27,7 +27,7 @@
   width: 1024px;
 }
 
-.card {
+.logo {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -89,7 +89,10 @@
   justify-content: space-around;
   align-items: center;
   width: 1200px;
+  height: inherit;
   margin: 0;
+  overflow: hidden;
+  /* z-index: 3; */
 }
 
 .portfolio-photo {
@@ -104,16 +107,32 @@
   justify-content: center;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  width: 35rem;
-  font-size: 1.4rem;
-  border: 1px solid gray;
-  border-radius: 9px;
-  box-shadow: 0px 0px 10px 0px black;
+  font-size: 1.8rem;
+  /* position: absolute; */
+  top: 0;
+  width: calc(36rem);
+  top: 30px;
+  transform: rotate3d(0.342, -0.2, 0, 22deg) rotateZ(7deg);
+  z-index: 2;
+  filter: grayscale(1);
+  opacity: 0.1;
+  min-width: 36rem;
+  min-height: 600px;
+  border-radius: 8px;
+  clip-path: padding-box;
+  right: -3%;
 }
 
 .profile-text:hover {
   background-color: #2aa7e0;
-  transform: skew(2deg, 2deg);
+  transform: rotate3d(0.342, -0.94, 0, 22deg) rotateZ(4deg);
+  transform: 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: width 2s;
+  transition-timing-function: 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+  box-shadow: 0px 0px 10px 0px black;
+  filter: grayscale(0);
+  filter: 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+  opacity: 1;
 }
 
 /* .textbgcard {

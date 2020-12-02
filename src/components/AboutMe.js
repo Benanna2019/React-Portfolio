@@ -35,24 +35,22 @@ export default function AboutMe() {
           </p>
         </div>
       </div>
-
       <div className="skills-container">
         <h1>Programming Skills</h1>
-
         <div className="Aboutme-Content-Container">
-          <div className="card">
+          <div className="logo">
             <LightTooltip title="Html">
               <img className="Logos html" src={Html} alt="HTML" />
               {/* <h2>HTML</h2> */}
             </LightTooltip>
           </div>
-          <div className="card">
+          <div className="logo">
             <LightTooltip title="Css">
               <img className="Logos css" src={Css} alt="CSS" />
               {/* <h2>CSS</h2> */}
             </LightTooltip>
           </div>
-          <div className="card">
+          <div className="logo">
             <LightTooltip title="Javascript">
               <img
                 className="Logos javascript"
@@ -62,19 +60,19 @@ export default function AboutMe() {
               {/* <h2>Javascript</h2> */}
             </LightTooltip>
           </div>
-          <div className="card">
+          <div className="logo">
             <LightTooltip title="React">
               <img className="Logos react" src={ReactLogo} alt="React Logo" />
               {/* <h2>React JS</h2> */}
             </LightTooltip>
           </div>
-          <div className="card">
+          <div className="logo">
             <LightTooltip title="Node JS">
               <img className="Logos node" src={Node} alt="Node Js" />
               {/* <h2>Node JS</h2> */}
             </LightTooltip>
           </div>
-          <div className="card">
+          <div className="logo">
             <LightTooltip title="MySql - Data Managment">
               <img className="Logos mysql" src={MySql} alt="My Sql" />
             </LightTooltip>
