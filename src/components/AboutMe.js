@@ -1,8 +1,7 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import "../styles/aboutme.css";
-import { withStyles, makeStyles } from "@material-ui/core/styles";
+import { withStyles } from "@material-ui/core/styles";
 import Tooltip from "@material-ui/core/Tooltip";
-import Typography from "@material-ui/core/Typography";
 import Javascript from "../images/iconfinder_187_Js_logo_logos_4373213.png";
 import Css from "../images/iconfinder_badge-css-3_317756.png";
 import Html from "../images/iconfinder_badge-html-5_317755.png";
@@ -24,7 +23,11 @@ export default function AboutMe() {
   return (
     <div className="Aboutme-Container">
       <div className="profile-section">
-        <img className="portfolio-photo" src={PortfolioPhoto} alt="Photo" />
+        <img
+          className="portfolio-photo"
+          src={PortfolioPhoto}
+          alt="Profile Pic"
+        />
         <div className="profile-text">
           <h3>Who am I? </h3>
           <p>
