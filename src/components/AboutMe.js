@@ -1,7 +1,5 @@
 import React from "react";
 import "../styles/aboutme.css";
-import { withStyles } from "@material-ui/core/styles";
-import Tooltip from "@material-ui/core/Tooltip";
 import Javascript from "../images/iconfinder_187_Js_logo_logos_4373213.png";
 import Css from "../images/iconfinder_badge-css-3_317756.png";
 import Html from "../images/iconfinder_badge-html-5_317755.png";
@@ -9,15 +7,6 @@ import MySql from "../images/iconfinder_MySQL_1012821.png";
 import Node from "../images/iconfinder_nodejs-new-black_1012819.png";
 import ReactLogo from "../images/iconfinder_React.js_logo_1174949.png";
 import PortfolioPhoto from "../images/PorfolioPhoto.png";
-
-const LightTooltip = withStyles((theme) => ({
-  tooltip: {
-    backgroundColor: theme.palette.common.white,
-    color: "rgba(0, 0, 0, 0.87)",
-    boxShadow: theme.shadows[1],
-    fontSize: 16,
-  },
-}))(Tooltip);
 
 export default function AboutMe() {
   return (
@@ -36,49 +25,81 @@ export default function AboutMe() {
             something we can reflect and cultivate and that is what I long to do
             as a developer.
           </p>
+          <hr />
+          <div className="contact-information">
+            <div>
+              <h4>Name: Ben Patton</h4>
+              <h4>
+                Email: <span className="email">bass41992ben@gmail.com</span>
+              </h4>
+            </div>
+            <h4>From: South Carolina, US</h4>
+          </div>
         </div>
       </div>
       <div className="skills-container">
-        <h1>Programming Skills</h1>
+        <div className="skills-text">
+          <h1>Programming Skills</h1>
+          <div>
+            I am Javascript Developer focusing on building Web Applications with
+            HTML, CSS, React, Node JS, MySql, Amazon Web Services. Skilled in
+            solving problems and making clean applications that provide an
+            awesome user interface/experience.{" "}
+          </div>
+        </div>
         <div className="Aboutme-Content-Container">
           <div className="logo">
-            <LightTooltip title="Html">
-              <img className="Logos html" src={Html} alt="HTML" />
-              {/* <h2>HTML</h2> */}
-            </LightTooltip>
+            <img className="Logos html" src={Html} alt="HTML" />
+            <div className="logo-text">
+              <h3>HTML</h3>
+              <div>
+                I use HTML in conjunction with CSS and Javascript to build
+                awesome frontends for websites. Check out my frontend work in my
+                projects below.
+              </div>
+            </div>
           </div>
           <div className="logo">
-            <LightTooltip title="Css">
-              <img className="Logos css" src={Css} alt="CSS" />
-              {/* <h2>CSS</h2> */}
-            </LightTooltip>
+            <img className="Logos css" src={Css} alt="CSS" />
+            <div className="logo-text">
+              <h3>CSS</h3>
+              <div>
+                I use CSS for all the fun styling on my frontend Websites. The
+                possibilities are limitless.{" "}
+              </div>
+            </div>
           </div>
           <div className="logo">
-            <LightTooltip title="Javascript">
-              <img
-                className="Logos javascript"
-                src={Javascript}
-                alt="javascript"
-              />
-              {/* <h2>Javascript</h2> */}
-            </LightTooltip>
+            <img
+              className="Logos javascript"
+              src={Javascript}
+              alt="javascript"
+            />
+            <div className="logo-text">
+              <h3>Javascript</h3>
+              <div></div>
+            </div>
           </div>
           <div className="logo">
-            <LightTooltip title="React">
-              <img className="Logos react" src={ReactLogo} alt="React Logo" />
-              {/* <h2>React JS</h2> */}
-            </LightTooltip>
+            <img className="Logos react" src={ReactLogo} alt="React Logo" />
+            <div className="logo-text">
+              <h3>React</h3>
+              <div></div>
+            </div>
           </div>
           <div className="logo">
-            <LightTooltip title="Node JS">
-              <img className="Logos node" src={Node} alt="Node Js" />
-              {/* <h2>Node JS</h2> */}
-            </LightTooltip>
+            <img className="Logos node" src={Node} alt="Node Js" />
+            <div className="logo-text">
+              <h3>Node JS</h3>
+              <div></div>
+            </div>
           </div>
           <div className="logo">
-            <LightTooltip title="MySql - Data Managment">
-              <img className="Logos mysql" src={MySql} alt="My Sql" />
-            </LightTooltip>
+            <img className="Logos mysql" src={MySql} alt="My Sql" />
+            <div className="logo-text">
+              <h3>MySql - Data Managment</h3>
+              <div></div>
+            </div>
           </div>
         </div>
       </div>

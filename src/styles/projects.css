@@ -131,6 +131,7 @@
 } */
 
 .projects-container {
+  border: 1px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -160,8 +161,9 @@ hr {
   width: 10rem;
 }
 
-img {
+.img {
   width: 20vw;
+  height: 45vh;
   border-top-left-radius: 9px;
   border-top-right-radius: 9px;
 }
@@ -266,13 +268,13 @@ img {
   filter: grayscale(0);
 }
 
-.card-3 {
+/* .card-3 {
   height: 55vh;
-}
+} */
 
-.card .study {
+/* .card .study {
   height: 39vh;
-}
+} */
 
 .card:hover .cover {
   -webkit-transform: translateY(-14px) scale(1.04);
@@ -416,3 +418,38 @@ img {
 .card-3:hover .prjctbtns div::before {
   color: #fff;
 }
+
+/* @media (min-wdith: 576px) {
+  .Navbar-Container {
+    font-size: 1.5em;
+  }
+
+  .Btn-Container,
+  .btn {
+    font-size: 1.5em;
+  }
+} */
+
+/*For devices like ipads*/
+/* @media (min-width: 768px) {
+  .Navbar-Container {
+    font-size: 1.5em;
+  }
+
+  .Btn-Container,
+  .btn {
+    font-size: 1.5em;
+  }
+} */
+
+/*For larger devices*/
+/* @media (min-width: 992px) {
+  .Navbar-Container {
+    font-size: 1.5em;
+  }
+
+  .Btn-Container,
+  .btn {
+    font-size: 1.5em;
+  }
+} */

@@ -68,9 +68,42 @@
   transform: scale(1.1);
   color: #f3861f;
 }
+
 /* .btn:hover:before,
 .btn:focus:before,
 .btn:active:before {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
+} */
+
+/* @media (min-wdith: 576px) {
+  .Navbar-Container {
+    height: 1.5rem;
+  }
+
+  .Btn-Container {
+    font-size: 14px;
+  }
+} */
+
+/*For devices like ipads*/
+/* @media (min-width: 768px) {
+  .Navbar-Container {
+    height: 2.5rem;
+  }
+
+  .Btn-Container {
+    font-size: 14px;
+  }
+} */
+
+/*For larger devices*/
+/* @media (min-width: 992px) {
+  .Navbar-Container {
+    height: 3rem;
+  }
+
+  .Btn-Container {
+    font-size: 14px;
+  }
 } */

@@ -1,22 +1,22 @@
 import React, { useRef, useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import "../styles/navbar.css";
+import "../styles/cta.css";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function Navbar() {
+export default function CallToAction() {
   let intro = useRef(null);
   // let buttons = useRef(null);
   useEffect(() => {
-    navBarIntro(intro);
+    ctaIntro(intro);
   }, []);
 
   // useEffect(() => {
   //   buttonIntro(buttons);
   // }, []);
 
-  const navBarIntro = (elem) => {
+  const ctaIntro = (elem) => {
     // const tl = gsap.timeline();
     gsap.from(elem, {
       scrollTrigger: {
@@ -25,8 +25,14 @@ export default function Navbar() {
         toggleActions: "play none none none",
       },
       duration: 2.5,
-      ease: "bounce",
-      x: "-100vw",
+      opacity: 0,
+      scale: 0,
+      rotation: 720,
+    });
+    gsap.to(elem, {
+      opacity: 1,
+      scale: 1,
+      rotation: 0,
     });
   };
 
@@ -43,23 +49,15 @@ export default function Navbar() {
   // };
 
   return (
-    <div className="Navbar-Container" ref={(el) => (intro = el)}>
-      <div className="Btn-Container">
-        <button className="btn home">Home</button>
-        <button className="btn about-me">About Me</button>
-        <button className="btn skills">Skills</button>
-        <button className="btn projects">Projects</button>
-        <button className="btn coding-challenges">Coding Challenges</button>
-        <button
-          className="btn blog"
-          onClick={() =>
-            window.open("https://next-js-blog-xi.vercel.app/", "_blank")
-          }
-        >
-          My Blog
-        </button>
-        <button className="btn contact">Contact</button>
+    <div className="CTA-container" ref={(el) => (intro = el)}>
+      <div className="call-container">
+        <div className="headerTxt">Let's work together!</div>
+        <div>
+          I am available for fulltime or freelance projects. Lets build
+          something awesome!
+        </div>
       </div>
+      <button className="cta-button">Hire Me!</button>
     </div>
   );
 }

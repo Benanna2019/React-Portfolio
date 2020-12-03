@@ -46,6 +46,41 @@ canvas {
   animation: glow 1s ease-in-out infinite alternate; */
 }
 
+/* @media (min-wdith: 576px) {
+  .Landing-Container {
+    height: 20rem;
+  }
+
+  #c {
+    height: 200px;
+    width: 200px;
+  }
+} */
+
+/*For devices like ipads*/
+/* @media (min-width: 768px) {
+  .Landing-Container {
+    height: 30rem;
+  }
+
+  #c {
+    height: 350px;
+    width: 350px;
+  }
+} */
+
+/*For larger devices*/
+/* @media (min-width: 992px) {
+  .Landing-Container {
+    height: 40rem;
+  }
+
+  #c {
+    height: 500px;
+    width: 500px;
+  }
+} */
+
 /* @keyframes glow {
   from {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00e660,

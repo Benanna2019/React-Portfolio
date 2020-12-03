@@ -4,6 +4,7 @@ import Navbar from "./Navbar";
 import AboutMe from "./AboutMe";
 // import Lines from "./Lines";
 import MyProjects from "./MyProjects";
+import CallToAction from "./CallToAction";
 
 export default function Home() {
   return (
@@ -12,8 +13,8 @@ export default function Home() {
       <LandingComponent />
       <Navbar />
       <AboutMe />
+      <CallToAction />
       <MyProjects />
-      {/* Call To Action */}
       {/* Coding Challenges */}
       {/* Contact Me */}
     </div>

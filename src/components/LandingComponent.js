@@ -206,7 +206,7 @@ export default function LandingComponent() {
       </div>
       <div className="text-container">
         <h1 className="intro" ref={(el) => (intro = el)}>
-          Hello, I'm<span className="highlight">{name}</span>.
+          Hello, I'm<span className="highlight">{name}</span>
           <div>I am a full-stack software developer.</div>
         </h1>
       </div>
