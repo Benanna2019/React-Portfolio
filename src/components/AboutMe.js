@@ -77,28 +77,43 @@ export default function AboutMe() {
             />
             <div className="logo-text">
               <h3>Javascript</h3>
-              <div></div>
+              <div>
+                From functionality to interactivity, I use Javascript makes the
+                web come to life. Javascript is the third puzzle piece along
+                with HTML and CSS for frontend developement
+              </div>
             </div>
           </div>
           <div className="logo">
             <img className="Logos react" src={ReactLogo} alt="React Logo" />
             <div className="logo-text">
               <h3>React</h3>
-              <div></div>
+              <div>
+                I use React, as React's website says, 'as a library for building
+                user interfaces.' React allows for simplie construction of
+                websites! It is the library this portfolio uses 😎{" "}
+              </div>
             </div>
           </div>
           <div className="logo">
             <img className="Logos node" src={Node} alt="Node Js" />
             <div className="logo-text">
               <h3>Node JS</h3>
-              <div></div>
+              <div>
+                I use Node Js for all backend development. Node Js allows me to
+                build fullstack web applications with the ability to communicate
+                to databases.
+              </div>
             </div>
           </div>
           <div className="logo">
             <img className="Logos mysql" src={MySql} alt="My Sql" />
             <div className="logo-text">
               <h3>MySql - Data Managment</h3>
-              <div></div>
+              <div>
+                I use MySql in combination with AWS for data creation, retrieval
+                and management.
+              </div>
             </div>
           </div>
         </div>
