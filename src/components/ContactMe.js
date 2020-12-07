@@ -1,7 +1,6 @@
 import React from "react";
 import emailjs from "emailjs-com";
 import "../styles/contactme.css";
-const dotenv = require("dotenv");
 
 const onSubmit = (e) => {
   e.preventDefault(); // Prevents default refresh by the browser
