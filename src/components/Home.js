@@ -5,6 +5,7 @@ import AboutMe from "./AboutMe";
 // import Lines from "./Lines";
 import MyProjects from "./MyProjects";
 import CallToAction from "./CallToAction";
+import ContactMe from "./ContactMe";
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
       <CallToAction />
       <MyProjects />
       {/* Coding Challenges */}
-      {/* Contact Me */}
+      <ContactMe />
     </div>
   );
 }

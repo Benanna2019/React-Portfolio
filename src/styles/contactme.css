@@ -1,0 +1,135 @@
+.contact-me-container {
+  height: 45rem;
+  background-color: #252525;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-heading {
+  color: #f3861f;
+  text-shadow: 2px 2px 10px 2px white;
+  margin-top: 6rem;
+}
+
+.contact-hr {
+  background-color: white;
+  border-color: white;
+  height: 2px;
+  width: 7rem;
+}
+
+.form {
+  padding-top: 2rem;
+}
+
+.message-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-message {
+  border: none;
+  border-bottom: 1px solid white;
+  padding: 7px;
+  font-size: 1rem;
+  outline: none;
+  margin: 4px;
+  background: transparent;
+}
+
+.form-message:focus {
+  border-color: hsl(17, 84%, 55%);
+  box-shadow: 0 0 5px 0 hsl(17, 100%, 70%);
+}
+
+.form-button {
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  cursor: pointer;
+  text-decoration: none;
+  margin-right: 1rem;
+  color: white;
+  background: none;
+  outline: none;
+  border: none;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(255, 255, 255, 0);
+  position: relative;
+  overflow: hidden;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.form-button:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #f3861f;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.form-button:hover,
+.form-button:focus,
+.form-button:active {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+  color: #f3861f;
+}
+
+input {
+  padding: 7px;
+  font-size: 1rem;
+  outline: none;
+  margin: 4px;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid white;
+  color: hsl(270, 1%, 47%);
+}
+
+input:focus {
+  border-color: hsl(17, 84%, 55%);
+  box-shadow: 0 0 5px 0 hsl(17, 100%, 70%);
+  color: white;
+}
+
+textarea {
+  padding: 7px;
+  font-size: 1.3rem;
+  font-family: inherit;
+  outline: none;
+  margin: 4px;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid white;
+  color: hsl(270, 1%, 47%);
+}
+
+textarea:focus {
+  border-color: hsl(17, 84%, 55%);
+  box-shadow: 0 0 5px 0 hsl(17, 100%, 70%);
+  color: white;
+}
