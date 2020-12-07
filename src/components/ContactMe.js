@@ -1,16 +1,16 @@
 import React from "react";
 import emailjs from "emailjs-com";
-import apikeys from "../assets/apikeys";
 import "../styles/contactme.css";
+const dotenv = require("dotenv");
 
 const onSubmit = (e) => {
   e.preventDefault(); // Prevents default refresh by the browser
   emailjs
     .sendForm(
-      apikeys.SERVICE_ID,
-      apikeys.TEMPLATE_ID,
+      process.env.REACT_APP_SERVICE_ID,
+      process.env.REACT_APP_TEMPLATE_ID,
       e.target,
-      apikeys.USER_ID
+      process.env.REACT_APP_USER_ID
     )
     .then(
       (result) => {
@@ -42,6 +42,14 @@ export default function ContactMe() {
           type="text"
           placeholder="Subject…"
           className="form__input"
+          required
+        />
+        <p>Email:</p>
+        <input
+          name="reply_to"
+          type="text"
+          placeholder="Your email..."
+          className="form-email"
           required
         />
         <div className="message-container">
