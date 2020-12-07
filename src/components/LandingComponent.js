@@ -200,7 +200,7 @@ export default function LandingComponent() {
   };
 
   return (
-    <div className="Landing-Container">
+    <div className="Landing-Container" id="home">
       <div className="canvas">
         <canvas id="c" width="500px" height="500px"></canvas>
       </div>

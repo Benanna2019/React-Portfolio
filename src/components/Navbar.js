@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Link } from "react-scroll";
 import "../styles/navbar.css";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -45,11 +46,26 @@ export default function Navbar() {
   return (
     <div className="Navbar-Container" ref={(el) => (intro = el)}>
       <div className="Btn-Container">
-        <button className="btn home">Home</button>
-        <button className="btn about-me">About Me</button>
-        <button className="btn skills">Skills</button>
-        <button className="btn projects">Projects</button>
-        <button className="btn coding-challenges">Coding Challenges</button>
+        <button className="btn home">
+          <Link to="home" smooth={true} duration={500}>
+            Home
+          </Link>
+        </button>
+        <button className="btn about-me">
+          <Link to="aboutMe" smooth={true} duration={500}>
+            About Me
+          </Link>
+        </button>
+        <button className="btn projects">
+          <Link to="projects" smooth={true} duration={500}>
+            Projects
+          </Link>
+        </button>
+        <button className="btn coding-challenges">
+          <Link to="codingChallenges" smooth={true} duration={500}>
+            Coding Challenges
+          </Link>
+        </button>
         <button
           className="btn blog"
           onClick={() =>
@@ -58,8 +74,18 @@ export default function Navbar() {
         >
           My Blog
         </button>
-        <button className="btn contact">Contact</button>
+        <button className="btn contact">
+          <Link to="contact" smooth={true} duration={500}>
+            Contact
+          </Link>
+        </button>
       </div>
     </div>
   );
 }
+
+// {/* <button className="btn skills">
+//           <Link to="skills" smooth={true} duration={500}>
+//             Skills
+//           </Link>
+//         </button> */}

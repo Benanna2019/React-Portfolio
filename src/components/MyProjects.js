@@ -6,7 +6,7 @@ import "../styles/projects.css";
 
 export default function MyProjects() {
   return (
-    <div className="projects-container">
+    <div className="projects-container" id="projects">
       <h1 className="heading">PROJECTS</h1>
       <hr />
       <div className="cards-container">

@@ -23,7 +23,7 @@ const onSubmit = (e) => {
 
 export default function ContactMe() {
   return (
-    <div className="contact-me-container">
+    <div className="contact-me-container" id="contact">
       <h1 className="contact-heading">Contact Me</h1>
       <hr className="contact-hr" />
       <form className="form" onSubmit={onSubmit}>

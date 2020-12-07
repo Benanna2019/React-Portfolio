@@ -10,7 +10,7 @@ import PortfolioPhoto from "../images/PorfolioPhoto.png";
 
 export default function AboutMe() {
   return (
-    <div className="Aboutme-Container">
+    <div className="Aboutme-Container" id="aboutMe">
       <div className="profile-section">
         <img
           className="portfolio-photo"
