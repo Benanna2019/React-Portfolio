@@ -61,11 +61,11 @@ export default function Navbar() {
             Projects
           </Link>
         </button>
-        <button className="btn coding-challenges">
+        {/* <button className="btn coding-challenges">
           <Link to="codingChallenges" smooth={true} duration={500}>
             Coding Challenges
           </Link>
-        </button>
+        </button> */}
         <button
           className="btn blog"
           onClick={() =>

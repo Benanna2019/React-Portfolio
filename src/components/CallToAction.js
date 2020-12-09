@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from "react";
+import { Link } from "react-scroll";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "../styles/cta.css";
@@ -57,7 +58,11 @@ export default function CallToAction() {
           something awesome!
         </div>
       </div>
-      <button className="cta-button">Hire Me!</button>
+      <button className="cta-button">
+        <Link to="contact" smooth={true} duration={500}>
+          Hire Me!
+        </Link>
+      </button>
     </div>
   );
 }

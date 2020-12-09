@@ -27,15 +27,15 @@ export default function ContactMe() {
       <h1 className="contact-heading">Contact Me</h1>
       <hr className="contact-hr" />
       <form className="form" onSubmit={onSubmit}>
-        <p>Your Name:</p>
+        <p></p>
         <input
           name="name"
           type="text"
-          placeholder="name…"
+          placeholder="Your Name…"
           className="form__input"
           required
         />
-        <p>Subject:</p>
+        <p></p>
         <input
           name="subject"
           type="text"
@@ -43,7 +43,7 @@ export default function ContactMe() {
           className="form__input"
           required
         />
-        <p>Email:</p>
+        <p></p>
         <input
           name="reply_to"
           type="text"
@@ -52,7 +52,7 @@ export default function ContactMe() {
           required
         />
         <div className="message-container">
-          <p>Your Message:</p>
+          <p></p>
           <textarea
             name="message"
             type="text"

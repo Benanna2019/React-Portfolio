@@ -1,8 +1,9 @@
 import React from "react";
+import { Link } from "react-scroll";
 import "../styles/aboutme.css";
-import Javascript from "../images/iconfinder_187_Js_logo_logos_4373213.png";
-import Css from "../images/iconfinder_badge-css-3_317756.png";
-import Html from "../images/iconfinder_badge-html-5_317755.png";
+import GSAPLogo from "../images/gsaplogo.png";
+import AWSLogo from "../images/awslogo.png";
+import FullstackLogo from "../images/fullstack-logo.png";
 import MySql from "../images/iconfinder_MySQL_1012821.png";
 import Node from "../images/iconfinder_nodejs-new-black_1012819.png";
 import ReactLogo from "../images/iconfinder_React.js_logo_1174949.png";
@@ -30,7 +31,9 @@ export default function AboutMe() {
             <div>
               <h4>Name: Ben Patton</h4>
               <h4>
-                Email: <span className="email">bass41992ben@gmail.com</span>
+                <Link to="contact" smooth={true} duration={500}>
+                  Email: <span className="email">bass41992ben@gmail.com</span>
+                </Link>
               </h4>
             </div>
             <h4>From: South Carolina, US</h4>
@@ -49,38 +52,16 @@ export default function AboutMe() {
         </div>
         <div className="Aboutme-Content-Container">
           <div className="logo">
-            <img className="Logos html" src={Html} alt="HTML" />
-            <div className="logo-text">
-              <h3>HTML</h3>
-              <div>
-                I use HTML in conjunction with CSS and Javascript to build
-                awesome frontends for websites. Check out my frontend work in my
-                projects below.
-              </div>
-            </div>
-          </div>
-          <div className="logo">
-            <img className="Logos css" src={Css} alt="CSS" />
-            <div className="logo-text">
-              <h3>CSS</h3>
-              <div>
-                I use CSS for all the fun styling on my frontend Websites. The
-                possibilities are limitless.{" "}
-              </div>
-            </div>
-          </div>
-          <div className="logo">
             <img
-              className="Logos javascript"
-              src={Javascript}
-              alt="javascript"
+              className="Logos frontend"
+              src={FullstackLogo}
+              alt="Frontend Dev Logo"
             />
             <div className="logo-text">
-              <h3>Javascript</h3>
+              <h3>Frontend Development</h3>
               <div>
-                From functionality to interactivity, I use Javascript makes the
-                web come to life. Javascript is the third puzzle piece along
-                with HTML and CSS for frontend developement
+                I use HTML, CSS and Javascript to build awesome frontends for
+                websites. Check out my frontend work in my projects below.
               </div>
             </div>
           </div>
@@ -92,6 +73,21 @@ export default function AboutMe() {
                 I use React, as React's website says, 'as a library for building
                 user interfaces.' React allows for simplie construction of
                 websites! It is the library this portfolio uses 😎{" "}
+              </div>
+            </div>
+          </div>
+          <div className="logo">
+            <img
+              className="Logos aws"
+              src={AWSLogo}
+              alt="Amazon Web Services"
+            />
+            <div className="logo-text">
+              <h3>Amazon Web Service</h3>
+              <div>
+                I use Amazon Web Services for security and authentication as
+                well as database hosting and Lambdas to make production quick
+                and secure.{" "}
               </div>
             </div>
           </div>
@@ -112,7 +108,23 @@ export default function AboutMe() {
               <h3>MySql - Data Managment</h3>
               <div>
                 I use MySql in combination with AWS for data creation, retrieval
-                and management.
+                and management/hosting.
+              </div>
+            </div>
+          </div>
+          <div className="logo">
+            <img
+              className="Logos greensock"
+              src={GSAPLogo}
+              alt="Greensock Animation"
+              onClick={() => window.open("https://greensock.com/", "_blank")}
+            />
+            <div className="logo-text">
+              <h3 className="greensock-logo">Greensock</h3>
+              <div>
+                I use Greensock because it is an awesome library for making
+                animations. Check out the animation below, you can't miss it 😏
+                . Click the logo above to go to their website.
               </div>
             </div>
           </div>
