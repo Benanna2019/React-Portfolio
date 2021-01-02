@@ -69,11 +69,12 @@
   vertical-align: middle;
   /* -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0); */
-  box-shadow: 0 0 1px rgba(255, 255, 255, 0);
+  /* filter: drop-shadow(0 10px 10px rgba(53, 49, 49, 0.5)); */
   -webkit-transition-property: transform;
   transition-property: transform;
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
+  filter: drop-shadow(1px 1px 1px rgba(53, 49, 49, 0.5));
 }
 
 .Logos.node,
@@ -101,7 +102,7 @@
 .Logos:hover,
 .Logos:focus,
 .Logos:active {
-  box-shadow: 0 10px 10px -10px rgba(253, 252, 252, 0.5);
+  filter: drop-shadow(3px 3px 3px rgba(53, 49, 49, 0.5));
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
